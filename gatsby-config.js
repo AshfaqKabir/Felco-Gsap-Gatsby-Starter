@@ -1,11 +1,56 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Ashfaq`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Acme`,
+          `Montserrat\:400,500,700`,
+          `Poppins\:300,400,700`,
+          `Alegreya Sans\:300,400,700,900`,
+          `Alegreya Sans SC\:300,400,700,900`,
+        ],
+        display: "swap",
+      },
+    },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Acme`,
+          },
+          {
+            family: `Montserrat`,
+            variants: [`400`, `500`, `700`],
+          },
+          {
+            family: `Poppins`,
+            variants: [`300`, `400`, `700`],
+          },
+          {
+            family: `Alegreya Sans`,
+            variants: [`300`, `400`, `700`, `900`],
+          },
+          {
+            family: `Alegreya Sans SC`,
+            variants: [`300`, `400`, `700`, `900`],
+          },
+        ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        // Add any options here
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
