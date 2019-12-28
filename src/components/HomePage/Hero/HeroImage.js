@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react"
 
 import styled from "styled-components"
-import { TweenMax, TimelineMax, Power2 } from "gsap"
+import { gsap, TweenMax, TimelineMax, Power2 } from "gsap";
 // import { color, fonts, fontSizes, fontWeight } from "../../../utils/theme"
 
 import Hero from "../../../images/hero.jpg"
