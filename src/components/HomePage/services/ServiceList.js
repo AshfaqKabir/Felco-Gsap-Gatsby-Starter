@@ -39,7 +39,7 @@ class ServiceList extends Component {
   }
   render() {
     return (
-      <CardGlobal>
+      <FlexContainer width={"70%"} justifyContent={"space-between"}>
         {this.state.services.map(service => {
           return (
             <ServiceCard
@@ -50,18 +50,9 @@ class ServiceList extends Component {
             />
           )
         })}
-      </CardGlobal>
+      </FlexContainer>
     )
   }
 }
-
-const CardGlobal = styled.div`
-  /* position: relative; */
-  width: 70%; /* individual card width */
-  display: flex; /* all card flex */
-  justify-content: space-between;
-  flex-wrap: wrap;
-  /* margin: 20px; */
-`
 
 export default ServiceList

@@ -7,6 +7,18 @@ export const FlexContainer = styled.div`
   align-items: ${props => props.alignItem};
   flex-wrap: ${props => (props.wrap ? "wrap" : null)};
   min-height: ${props => props.flexHeight};
-  width: ${props => props.width || null};
+  width: ${props => props.width};
   overflow: ${props => props.overflow};
+  @media (max-width: 992px) {
+    width: 100%;
+    justify-content: center;
+    /* flex-direction: column; */
+    align-items: center;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
 `

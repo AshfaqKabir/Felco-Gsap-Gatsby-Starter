@@ -80,6 +80,45 @@ const CardWrapper = styled.div`
       }
     }
   }
+  @media (max-width: 992px) {
+    width: 70%;
+    img {
+      width: 150px !important;
+    }
+    &:hover {
+      img {
+        max-width: 75px;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    max-width: 350px;
+    height: auto;
+    flex-direction: column;
+    .imgBox {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      left: 0;
+    }
+    .content {
+      width: 100%;
+      height: 100%;
+      margin-top: 0;
+      margin-left: 10px;
+    }
+    &:hover {
+      .imgBox {
+        top: 0;
+        width: 100%;
+        height: 200px;
+        left: 0;
+        img {
+          max-width: 100px;
+        }
+      }
+    }
+  }
 `
 
 export default ServiceCard
