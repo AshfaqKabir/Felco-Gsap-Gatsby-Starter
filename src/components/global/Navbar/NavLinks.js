@@ -22,7 +22,7 @@ const LinkWrapper = styled.ul`
     padding: 0.5rem 1rem 0.5rem 1rem;
     color: ${color.black};
     font-family: ${fonts.primary};
-    font-weight: ${fontWeight.bold};
+    /* font-weight: ${fontWeight.bold}; */
     text-decoration: none;
     text-transform: capitalize;
     cursor: pointer;
@@ -43,6 +43,7 @@ const LinkWrapper = styled.ul`
     height: auto;
     display: flex;
     margin: 0 auto;
+    margin-right: 20px;
     .nav-link {
       &:hover {
         background: none;
@@ -56,7 +57,8 @@ const LinkWrapper = styled.ul`
 export default class NavLinks extends Component {
   state = {
     links: [
-      { id: 1, path: "/about", name: "About Me" },
+      { id: 1, path: "/", name: "Home" },
+      { id: 21, path: "/about", name: "About Me" },
       { id: 2, path: "/contact", name: "Contact Me" },
     ],
   }

@@ -18,7 +18,7 @@ const Form = () => {
       <FlexContainer justifyContent={"center"}>
         <TextArea name="message" id="message" placeholder="Write a Message" />
       </FlexContainer>
-      <FlexContainer justifyContent={"flex-end"} alignItem={"center"}>
+      <FlexContainer justifyContent={"flex-end"} alignItem={"center"} tabJustify>
         <Button type="submit">Send</Button>
       </FlexContainer>
     </Container>

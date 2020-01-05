@@ -37,5 +37,22 @@ const PageContainer = styled.div`
       text-align: justify;
     }
   }
+  @media (max-width: 992px) {
+    min-height: auto;
+    .content {
+      p {
+        font-size: ${theme.fontSizes[3]};
+      }
+    }
+  }
+  @media (max-width: 568px) {
+    .content {
+      padding: 20px 5px;
+      p {
+        font-size: ${theme.fontSizes[1]};
+        width: 90%;
+      }
+    }
+  }
 `
 export default PageLayout

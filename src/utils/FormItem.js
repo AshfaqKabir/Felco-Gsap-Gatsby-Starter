@@ -40,6 +40,9 @@ export const TextArea = styled.textarea`
   &::placeholder {
     font-weight: ${fontWeight.medium};
   }
+  @media( max-width: 552px){
+    width:73%;
+  }
 `
 
 export const Button = styled.button`
@@ -61,4 +64,5 @@ export const Button = styled.button`
     cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
+
 `

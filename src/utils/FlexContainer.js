@@ -11,7 +11,7 @@ export const FlexContainer = styled.div`
   overflow: ${props => props.overflow};
   @media (max-width: 992px) {
     width: 100%;
-    justify-content: center;
+    justify-content: ${props => props.tabJustify ? "flex-end" : "center"};
     /* flex-direction: column; */
     align-items: center;
   }

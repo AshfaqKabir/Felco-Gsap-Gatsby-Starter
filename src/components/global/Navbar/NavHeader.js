@@ -7,10 +7,14 @@ import { FaAlignRight } from "react-icons/fa"
 import styled from "styled-components"
 import { color } from "../../../utils/theme"
 
+import logo from "../../../images/logo.svg"
+
 const NavHeader = ({ handleNavbar }) => {
   return (
     <HeaderWrapper>
-      <Link to="/">{/* <img src={logo} alt="company logo" /> */}</Link>
+      <Link to="/">
+        <img src={logo} alt="company logo" width="50%" />
+      </Link>
       <FaAlignRight
         className="toggle-icon"
         onClick={() => {

@@ -6,4 +6,7 @@ export const Container = styled.div`
   width: ${props => props.minWidth};
   min-height: ${props => props.minHeight};
   height: ${props => props.Height};
+  @media (max-width: 992px) {
+    width: 100%;
+  }
 `
