@@ -13,6 +13,7 @@ import Header from "./header"
 import Nav from "./global/Navbar/Nav"
 
 import styled from "styled-components"
+import { Footer } from "../utils"
 // import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -41,11 +42,14 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+        <Footer>
+          © {new Date().getFullYear()}, Built with 💙  By
+          <span style={{marginLeft: "10px"}}>
+            <a href="https://ashfaqkabir.com" target="_blank">
+              Ashfaq Kabir
+            </a>
+          </span>
+        </Footer>
       </div>
     </LayoutWrapper>
   )
@@ -56,10 +60,10 @@ Layout.propTypes = {
 }
 
 const LayoutWrapper = styled.div`
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
 `
 
 export default Layout

@@ -8,5 +8,6 @@ import { FlexContainer } from "./FlexContainer"
 
 // Components
 import { Title } from "./Title"
+import { Footer } from "./Footer"
 
-export { theme, Container, Section, FlexContainer, Title }
+export { theme, Container, Section, FlexContainer, Title, Footer }
